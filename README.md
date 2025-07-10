@@ -101,9 +101,9 @@ stress --cpu $(nproc) --timeout 120
 
 ![image](https://github.com/user-attachments/assets/b45a0472-49a3-4ef6-bd71-c8435344f787)
 
-![image](https://github.com/user-attachments/assets/1fc95c19-2200-4215-8fc5-caaf147b56b1)
+<img width="849" height="198" alt="image" src="https://github.com/user-attachments/assets/49b6cf3b-1cb4-428d-bf35-e4ac8080df9e" />
 
-![image](https://github.com/user-attachments/assets/2df4b12c-c78f-4ae8-b4a9-69f5ca128ee7)
+<img width="937" height="274" alt="image" src="https://github.com/user-attachments/assets/40df78ad-72ce-4cbf-98c6-294fa3b00404" />
 
 
 

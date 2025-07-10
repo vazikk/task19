@@ -8,7 +8,7 @@ version: '3.7'
 
 services:
   prometheus:
-    image: prom/prometheus:v3.4.2  # Указанная версия (2025)
+    image: prom/prometheus:v3.4.2 
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - ./alerts.yml:/etc/prometheus/alerts.yml
@@ -17,13 +17,13 @@ services:
     restart: unless-stopped
 
   node-exporter:
-    image: prom/node-exporter:v1.9.1  # Указанная версия (2025)
+    image: prom/node-exporter:v1.9.1 
     ports:
       - "9100:9100"
     restart: unless-stopped
 
   alertmanager:
-    image: prom/alertmanager:v0.28.1  # Указанная версия (2025)
+    image: prom/alertmanager:v0.28.1 
     volumes:
       - ./alertmanager.yml:/etc/alertmanager/config.yml
     ports:

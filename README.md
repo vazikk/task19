@@ -100,7 +100,7 @@ stress --cpu $(nproc) --timeout 120
 <img width="990" height="492" alt="image" src="https://github.com/user-attachments/assets/14edfbdc-0c4e-458f-9071-5dde00eb882f" />
 
 
-<img width="1903" height="201" alt="image" src="https://github.com/user-attachments/assets/75fa04b4-de7d-41ff-a61e-d9889e4b334e" />
+<img width="1908" height="283" alt="image" src="https://github.com/user-attachments/assets/4b16a1d5-45e6-49e3-ab3d-5263750fedef" />
 
 
 <img width="1912" height="203" alt="image" src="https://github.com/user-attachments/assets/2793b7ea-f8f4-4ee7-b827-02d5171adf50" />

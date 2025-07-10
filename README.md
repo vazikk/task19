@@ -1,4 +1,6 @@
 # task19
+
+alertmanager.yml
 1. Создал все файлы <br>
 ![image](https://github.com/user-attachments/assets/e9883c0e-3f7f-4f7c-9602-191b0826ac9c)
 

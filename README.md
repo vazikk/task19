@@ -58,7 +58,8 @@ rule_files:
 
 alertmanager.yml : <br>
 ```
-  global:
+
+global:
   resolve_timeout: 1m
 
 route:
@@ -68,10 +69,11 @@ route:
 receivers:
   - name: 'slack-notifications'
     slack_configs:
-      - api_url: 'https://hooks.slack.com/services/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'
+      - api_url: 'https://hooks.slack.com/services/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'
         channel: '#all-stazha'
         title: '{{ .CommonLabels.alertname }}'
         text: '{{ .CommonAnnotations.summary }}\n{{ .CommonAnnotations.description }}'
+
 ```
 
 alerts.yml : <br>
@@ -87,7 +89,6 @@ groups:
         annotations:
           summary: "High CPU usage on {{ $labels.instance }}"
           description: "CPU usage is {{ $value }}% (over 10% for 1 minute)"
-
 ```
 
 ИТОГ: <br>

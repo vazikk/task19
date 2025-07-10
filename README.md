@@ -97,9 +97,9 @@ groups:
 ```
 stress --cpu $(nproc) --timeout 120 
 ```
-![image](https://github.com/user-attachments/assets/a9e06dff-1b4b-48a8-ab3f-8f5472cf420a)
+<img width="990" height="492" alt="image" src="https://github.com/user-attachments/assets/14edfbdc-0c4e-458f-9071-5dde00eb882f" />
 
-![image](https://github.com/user-attachments/assets/524e2837-7359-46e2-84e1-50c6699097b2)
+<img width="1903" height="201" alt="image" src="https://github.com/user-attachments/assets/75fa04b4-de7d-41ff-a61e-d9889e4b334e" />
 
 ![image](https://github.com/user-attachments/assets/964a5e3a-654d-42ef-b651-63c558b60b5c)
 

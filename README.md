@@ -4,24 +4,26 @@
 
 docker-compose.jml :<br>
 ```
-  version: '3.7'
+version: '3.7'
 
 services:
   prometheus:
-    image: prom/prometheus
+    image: prom/prometheus:v3.4.2  # Указанная версия (2025)
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - ./alerts.yml:/etc/prometheus/alerts.yml
     ports:
       - "9090:9090"
+    restart: unless-stopped
 
   node-exporter:
-    image: prom/node-exporter
+    image: prom/node-exporter:v1.9.1  # Указанная версия (2025)
     ports:
       - "9100:9100"
+    restart: unless-stopped
 
   alertmanager:
-    image: prom/alertmanager
+    image: prom/alertmanager:v0.28.1  # Указанная версия (2025)
     volumes:
       - ./alertmanager.yml:/etc/alertmanager/config.yml
     ports:
@@ -32,24 +34,6 @@ services:
 
 prometheus.jml : <br>
 ```
-  global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'node_exporter'
-    static_configs:
-      - targets:
-        - 'node-exporter:9100'
-
-alerting:
-  alertmanagers:
-    - scheme: http
-      static_configs:
-        - targets:
-          - 'alertmanager:9093'
-
-rule_files:
-  - '/etc/prometheus/alerts.yml'
 
 ```
 

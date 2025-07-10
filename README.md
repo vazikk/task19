@@ -32,12 +32,31 @@ services:
       - '--config.file=/etc/alertmanager/config.yml'
 ```
 
-prometheus.jml : <br>
+prometheus.yml : <br>
+```
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'node_exporter'
+    static_configs:
+      - targets:
+          - 'node-exporter:9100'
+        labels:
+          instance: 'Node Exporter on inst1/my PC'
+
+alerting:
+  alertmanagers:
+    - scheme: http
+      static_configs:
+        - targets:
+          - 'alertmanager:9093'
+
+rule_files:
+  - '/etc/prometheus/alerts.yml'
 ```
 
-```
-
-alertmanager.jml : <br>
+alertmanager.yml : <br>
 ```
   global:
   resolve_timeout: 1m
@@ -55,7 +74,7 @@ receivers:
         text: '{{ .CommonAnnotations.summary }}\n{{ .CommonAnnotations.description }}'
 ```
 
-alerts.jml : <br>
+alerts.yml : <br>
 ```
 groups:
   - name: cpu-alerts
